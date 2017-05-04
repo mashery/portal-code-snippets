@@ -3,6 +3,7 @@
 A collection of code snippets for getting things done in the Mashery Portal.
 
 1. **[toggleOnSelect()](https://github.com/mashery/portal-code-snippets/tree/master/toggleOnSelect)** - Show/hide fields when a specific selection is made from a select field.
+2. **[disableOnSelect()](https://github.com/mashery/portal-code-snippets/tree/master/disableOnSelect)** - Disable fields when a specific selection is made from a select field.
 
 
 ## Questions and Bug Reports
