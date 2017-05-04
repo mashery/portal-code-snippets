@@ -8,6 +8,7 @@ A collection of code snippets for getting things done in the Mashery Portal.
 - **[conditionalFormFields.js](https://github.com/mashery/portal-code-snippets/tree/master/conditionalFormFields)** - Conditionally load fields in the contact form based on a visitors response to a radio button question.
 - **[getMasheryUserID.js](https://github.com/mashery/portal-code-snippets/tree/master/getMasheryUserID)** - Get the current user's mashery ID.
 - **[toggleIODocs.js](https://github.com/mashery/portal-code-snippets/tree/master/toggleIODocs)** - Dynamically toggle the IO-Docs selection using a URL query selector.
+- **[removeMasheryApiSelection.js](https://github.com/mashery/portal-code-snippets/tree/master/removeMasheryApiSelection)** - Overrides and removes `MasheryApiSelection.js`, which causes the last plan on the registration to be collapsed until checked when using combined registration.
 
 
 ## Questions and Bug Reports
