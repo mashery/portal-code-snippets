@@ -16,8 +16,8 @@ Call `addTOS(newTOS)` with your custom terms of service language.
 /**
  * @param {string} newTOS  The new Terms of Service language
  */
- addTOS(newTOS);
+addTOS(newTOS);
 
- // Example
+// Example
 addTOS('<a href="/our-tos">the ACME Corp Terms of Service</a>');
 ```

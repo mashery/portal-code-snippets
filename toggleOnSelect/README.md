@@ -18,11 +18,11 @@ Call `toggleOnSelect(select, target, fields)` for each select field that you wan
  * @param  {String}  value    Selector for the select element to show/hide fields in
  * @param  {Object}  fields   The fields to toggle (select_value: [hidden_field_value_1, hidden_field_value_2, ...])
  */
- toggleOnSelect(select, target, fields);
+toggleOnSelect(select, target, fields);
 
- // Example
- toggleOnSelect('#select1', '#select2', {
- 	'london': ['chicken', 'tuna', 'turkey'], // When 'london' is selected, hide 'chicken', 'tuna', and 'turkey'
- 	'paris': ['italian', 'grilledcheese'] // When 'paris' is selected, hide 'italian' and 'grilledcheese'
- });
+// Example
+toggleOnSelect('#select1', '#select2', {
+	'london': ['chicken', 'tuna', 'turkey'], // When 'london' is selected, hide 'chicken', 'tuna', and 'turkey'
+	'paris': ['italian', 'grilledcheese'] // When 'paris' is selected, hide 'italian' and 'grilledcheese'
+});
 ```

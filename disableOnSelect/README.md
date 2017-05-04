@@ -18,11 +18,11 @@ Call `disableOnSelect(selector, value, fields)` for each select field that you w
  * @param  {String}  value    The select field value that should disable other fields
  * @param  {Object}  fields   The field or fields to disable and the value to set for them
  */
- disableOnSelect(selector, value, fields);
+disableOnSelect(selector, value, fields);
 
- // Example
- disableOnSelect('#select1', 'paris', {
- 	'#input1': 'France',
- 	'#select2': 'tuna'
- });
+// Example
+disableOnSelect('#select1', 'paris', {
+	'#input1': 'France',
+	'#select2': 'tuna'
+});
 ```
