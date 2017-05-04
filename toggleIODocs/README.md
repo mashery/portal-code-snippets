@@ -30,6 +30,8 @@ http://yourdomain.com/io-docs?api=NameOfTheAPI
 http://yourdomain.com/io-docs?api=NameOfTheAPI&method=NameOfTheMethod
 ```
 
+To see it in action, visit [https://stagingcs9.mashery.com/io-docs?api=Test%20API](https://stagingcs9.mashery.com/io-docs?api=Test%20API).
+
 
 ## Global Settings
 
