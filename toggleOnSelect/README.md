@@ -1,4 +1,4 @@
-# toggleOnSelect()
+# toggleOnSelect.js
 
 Show/hide fields when a specific selection is made from a select field.
 

@@ -1,4 +1,4 @@
-# disableOnSelect()
+# disableOnSelect.js
 
 Disable fields when a specific selection is made from a select field.
 
