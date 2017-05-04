@@ -2,9 +2,9 @@
  * Disable fields when a specific selection is made from a select field
  * Copyright (c) 2017. TIBCO Software Inc. All Rights Reserved.
  * @author Chris Ferdinandi
- * @param  {String}       selector Selector for the select element to listen for changes on
- * @param  {String}       value    The select field value that should disable other fields
- * @param  {String|Array} fields   The field or fields to disable
+ * @param  {String}  selector Selector for the select element to listen for changes on
+ * @param  {String}  value    The select field value that should disable other fields
+ * @param  {Object}  fields   The field or fields to disable and the value to set for them
  */
 var disableOnSelect = function ( selector, value, fields ) {
 
