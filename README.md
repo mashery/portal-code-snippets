@@ -9,6 +9,7 @@ A collection of code snippets for getting things done in the Mashery Portal.
 - **[getMasheryUserID.js](https://github.com/mashery/portal-code-snippets/tree/master/getMasheryUserID)** - Get the current user's mashery ID.
 - **[toggleIODocs.js](https://github.com/mashery/portal-code-snippets/tree/master/toggleIODocs)** - Dynamically toggle the IO-Docs selection using a URL query selector.
 - **[removeMasheryApiSelection.js](https://github.com/mashery/portal-code-snippets/tree/master/removeMasheryApiSelection)** - Overrides and removes `MasheryApiSelection.js`, which causes the last plan on the registration to be collapsed until checked when using combined registration.
+- **[toggleSelectByQueryString.js](https://github.com/mashery/portal-code-snippets/tree/master/toggleSelectByQueryString)** Toggle a select value by a query string key in the URL.
 
 
 ## Questions and Bug Reports
