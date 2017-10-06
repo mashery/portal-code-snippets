@@ -1,0 +1,15 @@
+/**
+ * SSO Integration
+ */
+
+.page-login.login #main .options {
+	display: none;
+	visibility: hidden;
+}
+
+.page-login #main div.signin {
+	border-right: none;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
