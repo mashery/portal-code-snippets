@@ -10,7 +10,7 @@ A collection of code snippets for getting things done in the Mashery Portal.
 - **[toggleIODocs.js](https://github.com/mashery/portal-code-snippets/tree/master/toggleIODocs)** - Dynamically toggle the IO-Docs selection using a URL query selector.
 - **[removeMasheryApiSelection.js](https://github.com/mashery/portal-code-snippets/tree/master/removeMasheryApiSelection)** - Overrides and removes `MasheryApiSelection.js`, which causes the last plan on the registration to be collapsed until checked when using combined registration.
 - **[toggleSelectByQueryString.js](https://github.com/mashery/portal-code-snippets/tree/master/toggleSelectByQueryString)** Toggle a select value by a query string key in the URL.
-- **[modifySSOSignin.js](https://github.com/mashery/portal-code-snippets/tree/master/modifySSOSignin)** Modify the signin page for SSO implementations to make SSO the primary focus and hide the mashery sign in behind an expand toggle.
+- **[modifySSOSignin.js](https://github.com/mashery/portal-code-snippets/tree/master/modifySSOSignin)** Modify the sign in page for SSO implementations to make SSO the primary focus and hide the mashery sign in behind an expand toggle.
 
 
 ## Questions and Bug Reports
