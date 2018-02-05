@@ -1,3 +1,8 @@
+/**
+ * Fix broken links on integrated Control Center login
+ * @param  {String} find    The root URL for your Control Center instance
+ * @param  {String} replace The root URL for your Portal front end
+ */
 var fixIntegratedDashboardLinks = function (find, replace) {
 
 	// Only run on SSO admin login
