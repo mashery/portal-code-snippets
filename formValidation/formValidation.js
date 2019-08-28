@@ -21,8 +21,12 @@ var formValidation = function (form, checkGroup) {
 	// Methods
 	//
 
-	var shiftFocus = function (field) {
+	var shiftFocus = function () {
+		var field = form.querySelector('ul.error');
 		if (!field) return;
+		if (!field.hasAttribute('tabindex')) {
+			field.setAttribute('tabindex', '-1');
+		}
 		field.focus();
 	};
 
@@ -101,7 +105,6 @@ var formValidation = function (form, checkGroup) {
 
 		// Default form validity
 		var valid = true;
-		var first;
 
 		// Remove existing errors
 		removeErrors();
@@ -111,9 +114,6 @@ var formValidation = function (form, checkGroup) {
 			if (isValid(field)) return;
 			showFieldError(field);
 			valid = false;
-			if (!first) {
-				first = field;
-			}
 		});
 
 		// Checkboxes
@@ -145,7 +145,7 @@ var formValidation = function (form, checkGroup) {
 		// Stop form from submitting
 		event.preventDefault();
 		showFormError();
-		shiftFocus(first);
+		shiftFocus();
 
 	};
 
