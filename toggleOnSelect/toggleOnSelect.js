@@ -24,6 +24,9 @@ var toggleOnSelect = function (selectID, fieldID, values) {
 		if (label) {
 			label.setAttribute('hidden', true);
 		}
+		if (field.nextElementSibling && field.nextElementSibling.matches('ul.error')) {
+		    field.nextElementSibling.parentNode.removeChild(field.nextElementSibling);
+		}
 	};
 
 	var show = function () {

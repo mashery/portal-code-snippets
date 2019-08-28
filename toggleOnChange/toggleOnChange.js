@@ -46,6 +46,9 @@ var toggleOnChange = function (radioName, value, fieldIDs) {
 					field.removeAttribute('hidden');
 				} else {
 					field.setAttribute('hidden', 'true');
+					if (field.nextElementSibling && field.nextElementSibling.matches('ul.error')) {
+					    field.nextElementSibling.parentNode.removeChild(field.nextElementSibling);
+					}
 					clearField(field);
 				}
 			});
