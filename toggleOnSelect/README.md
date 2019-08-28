@@ -10,19 +10,17 @@ Add the script under `Manage` > `Portal` > `Portal Settings`. You can either add
 
 ### 2. Initialize the script.
 
-Call `toggleOnSelect(select, target, fields)` for each select field that you want to toggle fields.
+Call `toggleOnSelect(selectID, fieldID, values)` for each select field that you want to toggle fields.
 
 ```js
 /**
- * @param  {String}  selector Selector for the select element to listen for changes on
- * @param  {String}  value    Selector for the select element to show/hide fields in
- * @param  {Object}  fields   The fields to toggle (select_value: [hidden_field_value_1, hidden_field_value_2, ...])
+ * Toggle a field when a select menu's value changes
+ * @param  {String}       selectID The ID of the select menu
+ * @param  {String}       fieldID  The ID of the field to show/hide
+ * @param  {Array|String} values   The select menu values to show the target field for
  */
-toggleOnSelect(select, target, fields);
+toggleOnSelect(selectID, fieldID, values);
 
 // Example
-toggleOnSelect('#select1', '#select2', {
-	'london': ['chicken', 'tuna', 'turkey'], // When 'london' is selected, hide 'chicken', 'tuna', and 'turkey'
-	'paris': ['italian', 'grilledcheese'] // When 'paris' is selected, hide 'italian' and 'grilledcheese'
-});
+toggleOnSelect('#select-field', '#some-other-field', ['Yes', 'Maybe']);
 ```
