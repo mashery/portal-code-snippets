@@ -66,12 +66,6 @@ var formValidation = function (form, checkGroup) {
 				;
 		}
 
-
-		// if (existing) {
-		// 	existing.textContent = fieldError;
-		// 	return;
-		// }
-
 		// Insert error
 		var error = document.createElement('ul');
 		error.className = 'error';
@@ -102,8 +96,8 @@ var formValidation = function (form, checkGroup) {
 	 */
 	var submitHandler = function (event) {
 
-		// Stop form from submitting
-		event.preventDefault();
+		// // Stop form from submitting
+		// event.preventDefault();
 
 		// Default form validity
 		var valid = true;
@@ -126,12 +120,19 @@ var formValidation = function (form, checkGroup) {
 		if (checkGroup && checkGroup.length > 0) {
 			checkGroup.forEach(function (checkboxes) {
 
-				var checkboxesInvalid = checkboxes.checkboxes.filter(function (selector) {
+				var selectedCheckboxes = checkboxes.checkboxes.filter(function (selector) {
 					var checkbox = document.querySelector(selector);
-					return (!!checkbox && !checkbox.closest('[hidden]') && !checkbox.checked);
+					return (!!checkbox && checkbox.checked);
 				});
 
-				if (checkboxesInvalid.length > 0) {
+				var isHidden = checkboxes.checkboxes.filter(function (selector) {
+					var checkbox = document.querySelector(selector);
+					return (!!checkbox && checkbox.closest('[hidden]'));
+				});
+
+				if (isHidden.length > 0) return;
+
+				if (selectedCheckboxes.length < 1) {
 					showFieldError(document.querySelector(checkboxes.legend));
 					valid = false;
 				}
@@ -139,14 +140,12 @@ var formValidation = function (form, checkGroup) {
 			});
 		}
 
-		// If valid, submit form
-		// Otherwise, show error
-		if (valid) {
-			form.submit();
-		} else {
-			showFormError();
-			shiftFocus(first);
-		}
+		if (valid) return;
+
+		// Stop form from submitting
+		event.preventDefault();
+		showFormError();
+		shiftFocus(first);
 
 	};
 
