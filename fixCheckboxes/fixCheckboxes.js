@@ -18,6 +18,7 @@ var fixCheckboxes = function (arr, legend) {
 
 		// Variables
 		var input = document.querySelector(id);
+		if (!input) return;
 		var label = input.parentNode.previousElementSibling.querySelector('label');
 		var str = label.textContent;
 
