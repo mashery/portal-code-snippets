@@ -19,6 +19,7 @@ var fixCheckboxes = function (arr, legend) {
 		// Variables
 		var input = document.querySelector(id);
 		if (!input) return;
+		var empty = document.querySelector('[name="' + input.name + '"][value="0"]');
 		var label = input.parentNode.previousElementSibling.querySelector('label');
 		var str = label.textContent;
 
@@ -27,6 +28,9 @@ var fixCheckboxes = function (arr, legend) {
 			input.parentNode.style.marginBottom = '0';
 		}
 		label.textContent = '';
+		if (empty) {
+			label.appendChild(empty);
+		}
 		label.appendChild(input);
 		label.innerHTML += str;
 		label.id = id.slice(1) + '-label';
