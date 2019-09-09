@@ -72,6 +72,6 @@ var toggleOnChange = function (radioName, value, fieldIDs) {
 	hideOnLoad();
 
 	// Add our event listener
-	document.addEventListener('input', changeHandler, false);
+	document.addEventListener('click', changeHandler, false);
 
 };

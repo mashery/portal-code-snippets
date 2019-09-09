@@ -49,6 +49,6 @@ var toggleOnSelect = function (selectID, fieldID, values) {
 	hide();
 
 	// Add our event listener
-	select.addEventListener('input', changeHandler, false);
+	select.addEventListener('change', changeHandler, false);
 
 };
